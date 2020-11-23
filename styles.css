@@ -1,0 +1,254 @@
+body,html{
+  height: 100%;
+  overflow-x: hidden;
+
+} 
+
+/* Navbar */
+#brandLogo{
+  height: 60px;
+  width: 60px;
+  transform: rotate(5deg);
+  margin-left: 25%;
+}
+.navbar-nav{
+  margin-left: 3%;
+}
+
+.navbar{
+  padding: 0
+}
+
+/* Main page title */ 
+.mainTitle{
+  text-align: center;
+  margin: 5%;
+
+  font-family: titleFont;
+}
+
+@font-face {
+  font-family: titleFont;
+  src: url(/assets/fonts/SpaceMono-Bold.ttf);
+}
+
+/* CheckBox */
+
+.switch {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ffd01e;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Modal */
+
+.modal-content{
+  background-color: whitesmoke;
+}
+#modalToggle{
+  top: 16%;
+}
+
+#cardModalMargin{
+  margin: 0 15%;
+}
+
+/* Collapse */
+.collapse .card-body{
+  background-color: whitesmoke;
+  color: #111111;
+  background-position-x: 0.5rem;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: 20%;
+  text-align: center;
+  margin-top: 1%;
+}
+.coinImg{
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  height: 55%;
+  width: 25%;
+  
+}
+
+/* Content */
+
+.container{
+  position: relative; 
+}
+
+/* Buttons */ 
+#showChosenCoinsBtn{
+  margin: 0 10px;
+}
+
+/* Style to fit better for smaller devices */ 
+
+@media screen and (max-width: 766px) {
+  #searchInput{
+      width: 80%;
+      margin-right: 3%;
+  }
+
+}
+@media screen and (max-width: 991px) and (min-width: 768px){
+  .coinImg{
+    
+    top: 0;
+    left: 1%;
+    height: 25%;
+    width: 25%;
+    
+  }
+  .moreInfoDetails{
+    margin-left: 15%;
+  }
+  
+}
+
+/* Card Info */ 
+.card{
+  border:1px solid white;
+  background-color: #343a40;
+  color: white;
+}
+.moreInfoDetails{
+  
+  text-align: left;
+  margin-left: 35%;
+}
+
+/* Parallax backgrounds */ 
+
+.parallax1{
+
+  position: absolute;
+  background-image: url("/assets/images/background2.jpg");
+  width: 100vw;
+  height: 50vh;
+  min-height: 50%;
+  z-index: -80;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.parallax2 {
+  position: absolute;
+  background-image: url("/assets/images/background1.jpg");
+  top: 50%;
+  width: 100vw;
+  height: 50vh;
+  min-height: 50%;
+  z-index: -80;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+/* CanvasJS */
+
+.canvasjs-chart-container{
+justify-content: start!important;
+}
+
+.canvasjs-margin-top{
+  margin-top: 2%;
+}
+
+/* About page */
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+  }
+  
+  .social-link:hover,
+  .social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+  }
+  
+/* Gif */
+
+#gif{
+  display: block;
+  margin: 5% auto;
+  width: 25%;
+    
+}
